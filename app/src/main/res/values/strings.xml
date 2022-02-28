@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Facebook</string>
+    <string name="fav">Favourite</string>
+    <string name="set">Settings</string>
+</resources>

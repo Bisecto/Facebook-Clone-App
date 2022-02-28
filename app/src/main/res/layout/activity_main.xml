@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:background="#fefefe"
+    android:id="@+id/linear">
+
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar">
+
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:background="#fefefe"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Mobile number or email"
+            android:textColor="#090909"
+            android:textSize="30px"
+            android:id="@+id/mobile"></TextView>
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edittext"
+            android:maxLines="1"
+            android:inputType="text"
+            android:id="@+id/number"
+           ></EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_marginTop="15dp"
+            android:text="Password"
+            android:textColor="#090909"
+            android:textSize="30px"
+            android:id="@+id/pasword"></TextView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edittext"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="10dp"
+                android:layout_width="390dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:password="true"
+                android:maxLines="1"
+                android:inputType="text"
+                android:id="@+id/password">
+
+            </EditText>
+
+
+            <Button
+                android:id="@+id/hide"
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/hide"
+                android:gravity="right"
+                android:layout_marginTop="2dp"
+                android:onClick="hide"></Button>
+
+            <Button
+                android:layout_marginTop="2dp"
+                android:id="@+id/show"
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/show"
+                android:visibility="gone"
+
+                android:onClick="show" />
+
+
+        </RelativeLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#5793ff"
+           android:layout_marginTop="15dp"
+            android:text="Log in"
+            android:textColor="#FFFFFF"
+            android:onClick="Homepage"
+            android:id="@+id/log_in"/>
+         <Button
+             android:layout_width="170dp"
+             android:layout_height="50dp"
+             android:text=" Forgot password?"
+             android:background="@android:color/transparent"
+             android:textColor="#1E90FF"
+             android:textAllCaps="false"
+             android:layout_marginTop="10dp"
+             android:gravity="start"
+             android:textAlignment="textStart"
+             android:id="@+id/forgot"/>
+
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="__________________or____________________"
+            android:textColor="#0E0E0E"
+            android:id="@+id/or"/>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="#69a74e"
+            android:layout_gravity="center_horizontal"
+            android:text="Create New Account"
+            android:textColor="#FCFCFD"
+            android:textStyle="bold"
+            android:id="@+id/account"
+            android:onClick="account"/>
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:text="English (US)"
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"
+            android:textColor="#000000"
+            android:gravity="start"
+            android:textAlignment="textStart"
+            android:id="@+id/english"
+            android:onClick="english"/>
+        <Button
+
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:text="Hausa"
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"
+            android:textColor="#1E90FF"
+            android:gravity="start"
+            android:textAlignment="textStart"
+            android:id="@+id/hausa"
+            android:onClick="Hausa"/>
+        <Button
+
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:text="Espanol"
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"
+            android:textColor="#1E90FF"
+            android:gravity="start"
+            android:textAlignment="textStart"
+            android:id="@+id/espanol"
+            android:onClick="espanol"/>
+        <Button
+
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:text="Francais (France)"
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"
+            android:textColor="#1E90FF"
+            android:gravity="start"
+            android:textAlignment="textStart"
+            android:id="@+id/francais"
+            android:onClick="francais"/>
+
+        <Button
+
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:text="portugues (Brasil)"
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"
+            android:textColor="#1E90FF"
+            android:gravity="start"
+            android:textAlignment="textStart"
+            android:id="@+id/portugues"
+            android:onClick="portugues"/>
+        <Button
+
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:text=" More Languages..."
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"
+            android:textColor="#1E90FF"
+            android:gravity="start"
+            android:textAlignment="textStart"
+            android:id="@+id/more"/>
+    </LinearLayout>
+
+</LinearLayout>
